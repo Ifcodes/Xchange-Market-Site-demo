@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html,body{
   padding: 0;
   margin: 0;
@@ -7,9 +10,15 @@ html,body{
 body{
   max-width: 100%;
   min-height: 100vh;
+ 
+}
+.sec-1{
+  width: 100%;
+  min-height: 120vh;
   background-image: url(/img/hero.svg); 
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
+  z-index: 5;
 }
 img{
   max-width: 100%;
@@ -20,12 +29,14 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 20rem 1rem 1rem;
+  padding: 2rem 0;
   position: sticky;
+  top: 2rem;
 }
 .logo{
   width: 3rem;
   height: 3rem;
+  margin-left: 1rem;
 }
 .nav-links{
   display: flex;
@@ -33,7 +44,7 @@ nav{
   align-items: center;
 }
 .nav-links div,a{
-  padding-right: 1.5rem;
+  padding: .5rem 1rem;
   text-decoration: none;
   color: white;
   font-size: 1rem;
@@ -52,7 +63,7 @@ nav{
   align-items: center;
 }
 .theme-selector{
-  width: 2rem;
+  width: 3rem;
   height: 1rem;
   border: 1px solid rgba(0,0,0, .1);
   background-color: rgb(203,203,203);
@@ -69,18 +80,33 @@ nav{
 .intro-cont{
   width: 70%;
   min-height: 50vh;
-  margin: 10rem auto;
+  margin: 5rem auto;
   display: grid;
-  grid-template-columns: 30% 50%;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
   align-items: center;
 }
+.intro-descp{
+  margin-right: 3rem;
+}
+.city-img{
+  margin-left: 1rem;
+}
 .intro-descp h1{
-  font-size: 3rem;
+  width: 25vw;
+  font-size: 2.8rem;
   font-weight: bolder;
   color: rgb(61,57,107);
   margin: 0;
   padding: 0;
   line-height: 3rem;
+}
+.intro-descp p{
+  margin: 0;
+  color: rgb(61,57,107);
+  font-weight: 367;
+  font-size: 1.1rem;
+  word-spacing: .1rem;
 }
 .email{
   width: 25rem;
@@ -90,6 +116,7 @@ nav{
   box-shadow: 2px 2px 10px rgba(0,0,0, .1);
   display: flex;
   align-items: center;
+  margin-top: 1rem;
 }
 .email img{
   margin-left: 1rem;
@@ -114,4 +141,68 @@ nav{
   display: flex;
   align-items: center;
   box-shadow: 1px 1px 10px 2px rgb(109,107,230, .2);
+}
+.sec-2{
+  width: 100%;
+  height: 150vh;
+  background-image: url(./img/feature1.svg);
+  background-position: auto;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: 10rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 10rem;
+}
+.city2-img img{
+  width: 28rem;
+  height: 27rem;
+  position: relative;
+  bottom: 2.5rem;
+  left: .1rem;
+}
+.crypto{
+  width: 6.5rem;
+  height: 5rem;
+  border: 1px solid rgba(0,0,0, .1);
+  box-shadow: 2px 2px 5px 8px rgb(251,251,251);
+  background-color: white;
+  margin: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 7%;
+}
+.crypto img{
+  width: 5rem;
+  height: 3rem;
+}
+.cryptos-cont{
+  display: flex;
+  flex-wrap: wrap;
+}
+.fast-trans{
+  width: 32rem;
+  margin-top: 7rem;
+  margin-left: 10rem;
+}
+.writeup{
+  width: 27rem;
+ 
+}
+.writeup h1{
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(61,57,107);
+  margin: 0;
+  padding: 0;
+}
+.writeup p{
+  margin: .5rem auto;
+  color:rgb(148,139,191);
+  font-weight: 380;
+  font-size: 1rem;
+  word-spacing: .1rem;
 }
