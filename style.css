@@ -1,6 +1,10 @@
 *{
   box-sizing: border-box;
 }
+h1,h2{
+  padding: 0;
+  margin: 0;
+}
 html,body{
   padding: 0;
   margin: 0;
@@ -155,6 +159,7 @@ nav{
   top: 50rem;
   padding: 4rem 10rem;
   margin-bottom: 0;
+  z-index: 2;
 }
 .city2-img img{
   width: 28rem;
@@ -232,9 +237,11 @@ nav{
   left: 12rem;
  
 }
-.cube img{
+.cubes-img{
   width: 7rem;
   height: 7rem;  
+}
+.cubes-img-anim{
   transform: rotate(-70deg); 
   animation: bounce;
   animation-duration: 3s;
@@ -250,5 +257,82 @@ nav{
   }
 }
 .center-line{
+  width: 0;
+  height: 7rem;
+  border: 1px solid rgb(108,117,251);
+  margin: auto;
+  position: relative;
+  bottom: 4rem;
+  margin-bottom: 0;
+}
+.how-it-works-cont{
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(246,249,254);
+  z-index: 3;
+  position: relative;
+  top: 25rem
+}
+.watermark{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+  bottom: 4rem;
+  color: rgba(57,53,99, .1);
+  text-transform: capitalize;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hiw{
+  /* hiw stands for "how-it-works" */
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(57,53,99);
+  position: relative;
+  bottom: 7rem;
+  letter-spacing: .1rem;
+}
+.cube2{
+  width: 15rem;
+  height: 15rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  position: relative;
+  bottom: 16rem;
+  margin-right: 2rem;
+}
+.deals-cont{
+  max-width: 70vw;
+  min-height: auto;
+  margin: auto;
+}
+.deal{
+  width: 30rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0, .1);
+  padding: 1rem;
+}
+.deal-title-cont{
+  width: 10rem;
+}
+.deal-title{
+  font-size: .9rem;
+  font-weight: bold;
+  color: rgb(34,37,88);
+}
+.post-time{
+  display: block;
+  font-size: .4rem;
+  color: rgba(0,0,0, .4);
+}
+.icon-title{
   
 }
