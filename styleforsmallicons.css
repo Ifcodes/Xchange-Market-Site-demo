@@ -1,6 +1,6 @@
 .icon-sm{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
 }
 .img-profile-cont{
   width: 7rem;
@@ -23,8 +23,9 @@
   border-radius: 100%;
 }
 .img-profile{
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
 }
 .img-tiny-cont{
   width: max-content;
@@ -39,4 +40,15 @@
   width: 1rem;
   height: 1rem;
   border-radius: 100%;
+}
+.img-initial-pink{
+  width: max-content;
+  height: max-content;
+  border-radius: 100%;
+  padding: 1rem;
+  background-color: rgb(254,235,226);
+  color: rgb(249,192,167);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .rem;
 }
